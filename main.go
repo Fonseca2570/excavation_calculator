@@ -1,12 +1,14 @@
 package main
 
 import (
+	"bufio"
 	"excavation_calculator/hotspots"
 	"excavation_calculator/materials"
 	"fmt"
 	"github.com/PuerkitoBio/goquery"
 	"log"
 	"net/http"
+	"os"
 	"sort"
 	"strconv"
 )
@@ -56,7 +58,9 @@ func main(){
 		fmt.Printf("%s : %v : %v\n", h.Name, h.Total/10, h.Level)
 	}
 
-
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Print("Press Any Key to exit")
+	reader.ReadString('\n')
 
 
 }
