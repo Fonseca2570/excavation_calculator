@@ -58,9 +58,11 @@ func main(){
 		fmt.Printf("%s : %v : %v\n", h.Name, h.Total/10, h.Level)
 	}
 
-	reader := bufio.NewReader(os.Stdin)
-	fmt.Print("Press Any Key to exit")
-	reader.ReadString('\n')
+
+	fmt.Println("-----------------------------------------------------")
+	fmt.Println("Helper made by ClueHunterX add me in game if you find any bug :)")
+	fmt.Print("Press 'Enter' to Exit...\n")
+	bufio.NewReader(os.Stdin).ReadBytes('\n')
 
 
 }
